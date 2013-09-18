@@ -12,7 +12,10 @@
     <platform name="ios">
 
         <config-file target="config.xml" parent="/*">
-          <plugin name="Social" value="Social"/>
+          <feature name="Social">
+              <param name="ios-package" value="Social"/>
+              <param name="onload" value="true" />
+          </feature>
         </config-file>
 
         <header-file src="src/ios/Social.h" /> 
